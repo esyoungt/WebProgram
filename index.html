@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>견과사전 - 홈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3efe5;
+      color: #5e3c1c;
+    }
+
+    header {
+      background-color: #e8dfc9;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .logo {
+      font-family: 'Pacifico', cursive;        
+      font-size: 1.8rem;
+      font-weight: normal;
+      color: #5e3c1c;
+      text-decoration: none;
+    }
+
+    .search-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin: 0 2rem;
+    }
+
+    .search-box {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      border-radius: 25px;
+      border: 2px solid #5e3c1c;
+      font-size: 1rem;
+      outline: none;
+      background-color: white;
+    }
+
+    .search-box .material-symbols-outlined {
+      position: absolute;
+      right: 0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #5e3c1c;
+      pointer-events: none;
+    }
+
+    header nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    header nav a {
+      color: #5e3c1c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-banner {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .main-banner .banner-text {
+      font-family: 'Lobster', cursive;
+      font-size: 2.5rem;
+      color: black;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 960px;
+      margin: 2rem auto;
+    }
+
+    .category-box {
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 4px 8.5px rgba(0, 0, 0, 0.05);
+      height: 160px;
+      text-decoration: none;
+    }
+
+    .category-content {
+      background-color: white;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      box-sizing: border-box;
+      transition: background-color 0.6s ease;
+    }
+    
+    .category-content:hover {
+      background-color: #7b5635;
+      cursor: pointer;
+    }
+
+    .category-content h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #5e3c1c;
+      z-index: 1;
+    }
+
+    .category-content:hover h3 {
+      color: white;
+    }
+
+    .category-content img {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      height: 120px;
+      width: 120px;
+    }
+
+    .explore-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #5e3c1c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .explore-button:hover {
+      background-color: #7b5635;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .section h2 {
+      background-color: #e8dfc9;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .section p {
+      background-color: white;
+      margin: 0;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>견과사전 - 홈</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #f3efe5;
+      color: #5e3c1c;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background-color: #e8dfc9;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      color: #5e3c1c;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5e3c1c;
+      font-weight: bold;
+    }
+
+    .banner {
+      background-color: #d4c4ab;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .banner-text {
+      font-family: 'Lobster', cursive;
+      font-size: 2rem;
+    }
+
+    .more-button {
+      display: block;
+      margin: 0 auto 4rem;
+      padding: 0.5rem 1.5rem;
+      border: 2px solid #5e3c1c;
+      background: none;
+      color: #5e3c1c;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #e8dfc9;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">Nut-Pedia</a>
+
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" placeholder="검색어를 입력하세요" />
+        <span class="material-symbols-outlined">search</span>
+      </div>
+    </div>
+    <nav>
+      <a href="cart.html">장바구니</a>
+      <a href="service.html">고객센터</a>
+      <a href="login.html">로그인</a>
+    </nav>
+  </header>
+
+  <main>
+<body>
+
+  <div class="main-banner">
+    <div class="banner-text">A little <strong>"nut"</strong>ty, a lot amazing</div>
+  </div>
+  
+
+  <div class="category-grid">
+    <a href="snacks.html" class="category-box">
+      <div class="category-content">
+        <h3>Snacks</h3>
+        <img src="https://i.pinimg.com/736x/c7/c5/cf/c7c5cfd36ce9914524b81580da067ba2.jpg" alt="snacks">
+      </div>
+    </a>
+
+    <a href="fruit.html" class="category-box">
+      <div class="category-content">
+        <h3>Dried Fruit</h3>
+        <img src="https://i.pinimg.com/736x/5f/55/bd/5f55bdfb790befe50ea163ff766f8e08.jpg" alt="dried-fruit">
+      </div>
+    </a>
+
+    <a href="gift.html" class="category-box">
+      <div class="category-content">
+        <h3>Gifts</h3>
+        <img src="https://i.pinimg.com/736x/83/7d/de/837dde5de428d90181b92ee53dabb0dc.jpg" alt="gifts">
+      </div>
+    </a>
+
+    <a href="nuts.html" class="category-box">
+      <div class="category-content">
+        <h3>Nuts</h3>
+        <img src="https://i.pinimg.com/736x/2c/a1/87/2ca187092e723809e66f70f20a24f5e5.jpg" alt="nuts">
+      </div>
+    </a>
+
+    <a href="custom.html" class="category-box">
+      <div class="category-content">
+        <h3>Custom</h3>
+        <img src="https://i.pinimg.com/736x/a0/07/c4/a007c460e140da995f822a9293c44a04.jpg" alt="custom">
+      </div>
+    </a>
+
+    <a href="best.html" class="category-box">
+      <div class="category-content">
+        <h3>Best Sellers</h3>
+        <img src="https://i.pinimg.com/736x/0d/13/69/0d136942b7d4515232b4d43e05ba7a70.jpg" alt="bestsellers">
+      </div>
+    </a>
+  </div>
+
+  <button class="explore-button">더 보기</button>
+
+  <div class="section">
+    <h2>서비스 소개</h2>
+    <p><strong>서비스 소개</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>이용 방법</h2>
+    <p><strong>이용방법 설명</strong></p>
+  </div>
+</body>
+  </main>
+
+  <footer>
+    &copy; 2025 견과사전. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
+</html>
